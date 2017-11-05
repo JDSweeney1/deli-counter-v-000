@@ -3,7 +3,10 @@ katz_deli = []
 def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
-  end
+  else
+    new_line = "The ine is currently:" 
+    katz_deli.each.with_index {|name, index| "#{index}. #{name}"}
+    end
 end
 def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are "
