@@ -6,6 +6,7 @@ def line(katz_deli)
   else
     new_line = "The ine is currently:"
     katz_deli.each_with_index {|name, index| "#{index + 1}. #{name}"}
+    puts new_line
     end
 end
 def take_a_number(katz_deli, name)
